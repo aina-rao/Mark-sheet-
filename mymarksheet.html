@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="marksheet.css">
+    <title>marksheet</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="#default" class="logo">CompanyLogo</a>
+            <div class="header-right">
+                <a class="active" href="#home">Home</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </div>
+        </div>
+        <div class="box">
+            <center>
+                <h1 class="head1">STUDENT MARKSHEET</h1>
+            </center>
+            <div class="stdinfo">
+                <div>
+                    <h1 class="name">Student Information</h1>
+                </div>
+                <div class="gape"><label>Your Name 
+                <input type="text" id="text" placeholder="Candidate Name" /></label>
+                    <label> Father Name :
+               <input type="text" id="fathername" placeholder="Father Name"/>
+           </label></div><br>
+                <div class="gape2"><label>Institue :
+               <input type="text" id="institute" placeholder="Institue Name"/>
+           </label>
+                    <label>Your Id number:
+               <input type="text" id="batch" placeholder="Batch"/>
+           </label><br>
+                </div>
+            </div>
+            <div class="marks">
+                <h1 class="marking">Student Obtained Marks</h1>
+                <div class="marking">
+                    <label>Islamiat:</label>
+                    <input type="text" id="isl" placeholder="Obt: marks/100" />
+                    <label>English:</label>
+                    <input type="text" id="eng" placeholder="Obt: marks/100" /></div><br>
+                <div class="gape3"><label>C++ Prog:</label>
+                    <input type="text" id="c" placeholder="Obt: marks/100" />
+                    <label>Calculus:</label>
+                    <input type="text" id="calculus" placeholder="Obt: marks/100" />
+                </div>
+
+                <Div class="btn">
+                    <button class="button" style="font-size:17" type="button" onclick='myFun()'>Submit</button>
+                    <button class="button" style="font-size:17" type="Reset">Reset</button>
+                    <div class="result"></div>
+                </div>
+                <div class="total">
+                    <label>Total Marks</label>
+                    <input type="text" id="total" placeholder="" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="marksheet.js"></script>
+</body>
+
+</html>
